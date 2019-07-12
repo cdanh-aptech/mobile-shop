@@ -1,5 +1,4 @@
-[
-    {
+[{
         "name": "symfony/polyfill-ctype",
         "version": "v1.11.0",
         "version_normalized": "1.11.0.0",
@@ -40,8 +39,7 @@
         "license": [
             "MIT"
         ],
-        "authors": [
-            {
+        "authors": [{
                 "name": "Symfony Community",
                 "homepage": "https://symfony.com/contributors"
             },
@@ -100,8 +98,7 @@
         "license": [
             "MIT"
         ],
-        "authors": [
-            {
+        "authors": [{
                 "name": "Nicolas Grekas",
                 "email": "p@tchwork.com"
             },
@@ -158,8 +155,7 @@
         "license": [
             "MIT"
         ],
-        "authors": [
-            {
+        "authors": [{
                 "name": "Nicolas Grekas",
                 "email": "p@tchwork.com"
             },
@@ -238,8 +234,7 @@
         "license": [
             "MIT"
         ],
-        "authors": [
-            {
+        "authors": [{
                 "name": "Nicolas Grekas",
                 "email": "p@tchwork.com"
             },
@@ -261,12 +256,12 @@
         "version_normalized": "2.11.3.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/twigphp/Twig.git",
+            "url": "https://github.com/twigmobile-shop.git",
             "reference": "699ed2342557c88789a15402de5eb834dedd6792"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/twigphp/Twig/zipball/699ed2342557c88789a15402de5eb834dedd6792",
+            "url": "https://api.github.com/repos/twigmobile-shop/zipball/699ed2342557c88789a15402de5eb834dedd6792",
             "reference": "699ed2342557c88789a15402de5eb834dedd6792",
             "shasum": ""
         },
@@ -300,8 +295,7 @@
         "license": [
             "BSD-3-Clause"
         ],
-        "authors": [
-            {
+        "authors": [{
                 "name": "Fabien Potencier",
                 "email": "fabien@symfony.com",
                 "homepage": "http://fabien.potencier.org",
