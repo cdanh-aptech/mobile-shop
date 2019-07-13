@@ -12,9 +12,11 @@ if(isset($_POST['btnThemMoi']))
     // Lấy dữ liệu người dùng hiệu chỉnh gởi từ REQUEST POST
     $tenKM = $_POST['km_ten'];
     $noidung = $_POST['km_noidung'];
-    $tungay = date_parse($_POST['km_tungay']);
-    $denngay = date_parse($_POST['km_denngay']);
-
+    // $tungay = date_parse($_POST['km_tungay']);
+    // $denngay = date_parse($_POST['km_denngay']);
+    $tungay = date('d/m/Y', strtotime($_POST['km_tungay']));
+    $denngay = date('d/m/Y', strtotime($_POST['km_denngay']));
+    
     // Câu lệnh INSERT
     $sql = "INSERT INTO `khuyenmai` (km_ten, km_noidung, km_tungay, km_denngay) VALUES ('" . $tenKM . "', '". $noidung ."', '". $tungay ."', '". $denngay ."');";
 
