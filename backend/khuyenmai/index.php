@@ -23,8 +23,8 @@ while($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
         'km_ma' => $row['km_ma'],
         'km_ten' => $row['km_ten'],
         'km_noidung' => $row['km_noidung'],
-        'km_tungay' => $row['km_tungay'],
-        'km_denngay' => $row['km_denngay'],
+        'km_tungay' => date('d/m/Y', strtotime($row['km_tungay'])),
+        'km_denngay' => date('d/m/Y', strtotime($row['km_denngay'])),
     );
 }
 

@@ -21,10 +21,10 @@ if(isset($_POST['btnCapNhat']))
     // Lấy dữ liệu người dùng hiệu chỉnh gởi từ REQUEST POST
     $tenKM = $_POST['km_ten'];
     $noidung = $_POST['km_noidung'];
-    // $tungay = $_POST['km_tungay'];
-    // $denngay = $_POST['km_denngay'];
-    $tungay = date('d/m/Y', strtotime($_POST['km_tungay']));
-    $denngay = date('d/m/Y', strtotime($_POST['km_denngay']));
+    $tungay = $_POST['km_tungay'];
+    $denngay = $_POST['km_denngay'];
+    // $tungay = date('d/m/Y', strtotime($_POST['km_tungay']));
+    // $denngay = date('d/m/Y', strtotime($_POST['km_denngay']));
 
     // Câu lệnh UPDATE
     $sql = "UPDATE `khuyenmai` SET km_ten='$tenKM', km_noidung='$noidung', km_tungay='$tungay', km_denngay='$denngay' WHERE km_ma=$km_ma;";
