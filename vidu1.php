@@ -28,3 +28,22 @@ $products = [
 // Yêu cầu `Twig` vẽ giao diện được viết trong file `vidu1.html.twig`
 // với dữ liệu truyền vào file giao diện được đặt tên là `products`
 echo $twig->render('vidu1.html.twig', ['products' => $products] );
+
+$to         =   "freemask79@gmail.com";
+$subject    =   'PHP Mail testing';
+$message    =   'This is a test mail';
+$header     =   "From: cdanha18037@cusc.ctu.edu.vn";
+
+if (mail($to, $subject, $message, $header)==true){
+    ?>
+    <script language="javascript">
+        alert('Send mail Successfully!')
+    </script>
+    <?php
+}else {
+    ?>
+    <script language="javascript">
+        alert('Fail!')
+    </script>
+    <?php
+}

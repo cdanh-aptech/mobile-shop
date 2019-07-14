@@ -12,6 +12,10 @@ include_once(__DIR__.'/../../app/helpers.php');
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
+// require 'mobile-shop/vendor/PHPMailer/src/Exception.php';
+// require 'mobile-shop/vendor/PHPMailer/src/PHPMailer.php';
+// require 'mobile-shop/vendor/PHPMailer/src/SMTP.php';
+
 // 2. Nếu người dùng có bấm nút Đăng ký thì thực thi câu lệnh INSERT
 if(isset($_POST['btnDangKy'])) 
 {
@@ -28,6 +32,9 @@ if(isset($_POST['btnDangKy']))
     $kh_namsinh = $_POST['kh_namsinh'];
     $kh_cmnd = $_POST['kh_cmnd'];
 
+
+
+    
     // Sử dụng Mã hóa MD5 hoặc SHA1 để mã hóa chuỗi
     // echo md5(time());
     // Output: 447c13ce896b820f353bec47248675b3
@@ -55,8 +62,8 @@ if(isset($_POST['btnDangKy']))
          $mail->isSMTP();                                       // Set mailer to use SMTP
          $mail->Host = 'smtp.gmail.com';                        // Specify main and backup SMTP servers
          $mail->SMTPAuth = true;                                // Enable SMTP authentication
-         $mail->Username = 'tester.mail.nentang@gmail.com';     // SMTP username
-         $mail->Password = 'cumauahhoyahpxzl';                  // SMTP password
+         $mail->Username = 'cdanha18037@cusc.ctu.edu.vn';       // SMTP username
+         $mail->Password = 'anh@cu$c';                          // SMTP password
          $mail->SMTPSecure = 'tls';                             // Enable TLS encryption, `ssl` also accepted
          $mail->Port = 587;                                     // TCP port to connect to
          $mail->CharSet = "UTF-8";
@@ -71,9 +78,9 @@ if(isset($_POST['btnDangKy']))
          );
  
          //Recipients
-         $mail->setFrom('tester.mail.nentang@gmail.com', 'Test Mail');
+         $mail->setFrom('cdanha18037@cusc.ctu.edu.vn', 'Test Mail');
          $mail->addAddress($kh_email);                          // Add a recipient
-         $mail->addReplyTo('phucuong@ctu.edu.vn', 'Người quản trị Website');
+         $mail->addReplyTo('cdanha18037@cusc.ctu.edu.vn', 'Người quản trị Website');
          // $mail->addCC('cc@example.com');
          // $mail->addBCC('bcc@example.com');
      
