@@ -29,6 +29,7 @@ $products = [
 // với dữ liệu truyền vào file giao diện được đặt tên là `products`
 echo $twig->render('vidu1.html.twig', ['products' => $products] );
 
+/* Test PHP mail
 $to         =   "freemask79@gmail.com";
 $subject    =   'PHP Mail testing';
 $message    =   'This is a test mail';
@@ -47,3 +48,4 @@ if (mail($to, $subject, $message, $header)==true){
     </script>
     <?php
 }
+*/

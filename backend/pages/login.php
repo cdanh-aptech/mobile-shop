@@ -37,17 +37,13 @@ if(isset($_POST['btnDangNhap']))
             echo $twig->render('backend/pages/user-not-activated.html.twig' );
         }
         else { //Đã kích hoạt
-            echo 'Đăng nhập thành công!';
+            echo '<script> alert("Đăng nhập thành công!"); </script>';
             $_SESSION['username'] = $kh_tendangnhap;
             $_SESSION['trangthai'] = 1; // 1: Đăng nhập thành công; 0: Thất bại
         }  
     }
     else {
-        ?>
-            <script language="javascript">
-                alert('Đăng nhập thất bại!');
-            </script>
-        <?php
+        echo '<script> alert("Đăng nhập thất bại!"); </script>';
     }
 
     // Đóng kết nối
